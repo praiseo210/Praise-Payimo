@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Praise Payimo | Official Website</title>
+        <link rel="icon" type="image/jpeg" href="background.jpeg">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        PP
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#music">Music</a>
+        <a href="#about">About</a>
+        <a href="#bookings">Bookings</a>
+    </nav>
+
+    <a href="#contact" class="nav-contact">
+        Contact
+    </a>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-image">
+
+        <!-- Put Praise Payimo's picture in the same folder
+             and name it praise-payimo.jpg -->
+
+        <img src="background.jpeg" alt="Praise Payimo">
+
+    </div>
+
+    <div class="hero-content">
+
+        <p class="small-title">
+            SINGER • SONGWRITER • MUSIC MINISTER
+        </p>
+
+        <h1>
+            Praise<br>
+            Payimo
+        </h1>
+
+        <p class="hero-text">
+            Welcome to the official website of Praise Payimo.
+            Discover the music, ministry, events and latest
+            releases.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#music" class="button primary">
+                Explore Music
+            </a>
+
+            <a href="#bookings" class="button secondary">
+                Book Praise Payimo
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MUSIC SECTION ================= -->
+
+<section class="music" id="music">
+
+    <div class="music-content">
+
+        <p class="section-label">
+            MUSIC
+        </p>
+
+        <h2>
+            Songs that<br>
+            inspire.
+        </h2>
+
+        <p>
+            Listen to Praise Payimo's latest music and
+            discover songs created to inspire, encourage
+            and connect people through music.
+        </p>
+<!-- =========================
+     MUSIC SECTION
+========================= -->
+
+<section id="music">
+
+    <style>
+        /* MUSIC SECTION */
+
+        #music {
+            min-height: 650px;
+            padding: 100px 7%;
+            background: #0b0b0b;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .music-content {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .music-label {
+            color: #f5c542;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            margin-bottom: 18px;
+        }
+
+        .music-title {
+            font-size: clamp(50px, 8vw, 90px);
+            line-height: .95;
+            margin: 0 0 25px;
+            font-weight: 700;
+            letter-spacing: -3px;
+        }
+
+        .music-description {
+            max-width: 700px;
+            color: #aaa;
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 45px;
+        }
+
+
+        /* BUTTON CONTAINER */
+
+        .music-buttons {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+
+        /* BUTTON */
+
+        .music-button {
+            position: relative;
+
+            min-width: 200px;
+            height: 65px;
+
+            padding: 0 18px;
+
+            display: flex;
+            align-items: center;
+            gap: 14px;
+
+            border-radius: 18px;
+
+            text-decoration: none;
+
+            color: white;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(255,255,255,.08),
+                    rgba(255,255,255,.025)
+                );
+
+            border: 1px solid rgba(255,255,255,.13);
+
+            backdrop-filter: blur(15px);
+
+            font-size: 15px;
+            font-weight: 700;
+
+            overflow: hidden;
+
+            transition: .4s ease;
+        }
+
+
+        /* ICON */
+
+        .button-icon {
+            width: 40px;
+            height: 40px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 12px;
+
+            font-size: 18px;
+            font-weight: bold;
+
+            flex-shrink: 0;
+
+            transition: .4s ease;
+        }
+
+
+        /* ARROW */
+
+        .button-arrow {
+            margin-left: auto;
+
+            width: 32px;
+            height: 32px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            border: 1px solid rgba(255,255,255,.15);
+
+            color: #888;
+
+            transition: .4s ease;
+        }
+
+
+        /* APPLE */
+
+        .apple .button-icon {
+            background: white;
+            color: black;
+        }
+
+        .apple:hover {
+            background: white;
+            color: black;
+
+            border-color: white;
+
+            transform: translateY(-7px);
+
+            box-shadow:
+                0 18px 45px rgba(255,255,255,.15);
+        }
+
+        .apple:hover .button-icon {
+            transform: scale(1.1);
+        }
+
+        .apple:hover .button-arrow {
+            background: black;
+            color: white;
+
+            transform: rotate(45deg);
+        }
+
+
+        /* SPOTIFY */
+
+        .spotify .button-icon {
+            background: #1ed760;
+            color: black;
+        }
+
+        .spotify:hover {
+            background: #1ed760;
+            color: black;
+
+            border-color: #1ed760;
+
+            transform: translateY(-7px);
+
+            box-shadow:
+                0 18px 45px rgba(30,215,96,.2);
+        }
+
+        .spotify:hover .button-icon {
+            transform: scale(1.1);
+        }
+
+        .spotify:hover .button-arrow {
+            background: black;
+            color: white;
+
+            transform: rotate(45deg);
+        }
+
+
+        /* YOUTUBE */
+
+        .youtube .button-icon {
+            background: #ff0000;
+            color: white;
+        }
+
+        .youtube:hover {
+            background: #ff0000;
+            color: white;
+
+            border-color: #ff0000;
+
+            transform: translateY(-7px);
+
+            box-shadow:
+                0 18px 45px rgba(255,0,0,.2);
+        }
+
+        .youtube:hover .button-icon {
+            transform: scale(1.1);
+        }
+
+        .youtube:hover .button-arrow {
+            background: white;
+            color: #ff0000;
+
+            transform: rotate(45deg);
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            #music {
+                padding: 75px 20px;
+            }
+
+            .music-title {
+                font-size: 55px;
+            }
+
+            .music-description {
+                font-size: 15px;
+            }
+
+            .music-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .music-button {
+                width: 100%;
+                max-width: 400px;
+            }
+
+        }
+    </style>
+
+
+    <div class="music-content">
+
+        <div class="music-label">
+            MUSIC
+        </div>
+
+        <h2 class="music-title">
+            Songs that<br>
+            inspire.
+        </h2>
+
+        <p class="music-description">
+            Listen to Praise Payimo's latest music and discover
+            songs created to inspire, encourage and connect
+            people through music.
+        </p>
+
+
+        <!-- MUSIC BUTTONS -->
+
+        <div class="music-buttons">
+
+            <!-- APPLE MUSIC -->
+
+            <a
+                href="https://music.apple.com/us/artist/praise-payimo/1888074029"
+                class="music-button apple"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+
+                <span class="button-icon"></span>
+
+                <span>Apple Music</span>
+
+                <span class="button-arrow">↗</span>
+
+            </a>
+
+
+            <!-- SPOTIFY -->
+
+            <a
+                href="https://open.spotify.com/artist/6yMFnoC2BJYRG1Xp1i88Ot?si=cX66thj1SL6QVFybKu7fcg"
+                class="music-button spotify"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+
+                <span class="button-icon">●</span>
+
+                <span>Spotify</span>
+
+                <span class="button-arrow">↗</span>
+
+            </a>
+
+
+            <!-- YOUTUBE -->
+
+            <a
+                href="https://www.youtube.com/@PraisePayimo"
+                class="music-button youtube"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+
+                <span class="button-icon">▶</span>
+
+                <span>YouTube</span>
+
+                <span class="button-arrow">↗</span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+    <div class="about-image">
+
+        <img src="background.jpeg" alt="Praise Payimo">
+
+    </div>
+
+    <div class="about-content">
+
+        <p class="section-label">
+            ABOUT PRAISE PAYIMO
+        </p>
+
+        <h2>
+            Music with purpose.
+        </h2>
+
+        <p>
+            
+Praise Payimo is a worship leader and gospel artist 
+whose music is rooted in one simple conviction, 
+that the Word of God is alive, and it deserves to be sung.
+
+Drawing inspiration from the miraculous, Praise writes and ministers 
+songs that don't just fill a room but shift the atmosphere in it. 
+        </p>
+
+        <p>
+ Each song is less a performance and more an invitation, an open door to step out of the noise of everyday life and into something sacred. An invitation to believe that God still moves, still heals, and still shows up for those who seek Him.
+At the core of his ministry is Worship Culture, an interdenominational worship and miracle meeting where believers from all backgrounds gather to experience God through praise, prayer, and the supernatural. It's a space where worship isn't confined to a denomination. 
+Praise's vision is straightforward but carries weight: to see the truth of Scripture expressed through songs, not just preached from a pulpit, but felt, heard, and experienced.
+        </p>
+
+        <a href="#bookings" class="button primary">
+            Get In Touch
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BOOKINGS ================= -->
+
+<section class="bookings" id="bookings">
+
+    <div class="booking-box">
+
+        <p class="section-label">
+            BOOKINGS
+        </p>
+
+        <h2>
+            Invite Praise Payimo
+        </h2>
+
+        <p>
+            For bookings, events, performances and
+            ministry invitations, get in touch.
+        </p>
+
+        <a href="mailto:epraise73@gmail.com" class="booking-button">
+            Email for Bookings
+        </a>
+
+    </div>
+
+</section>
+
+<section class="music-section">
+
+    <!-- CARD 1 -->
+    <div class="music-card">
+        <h2>Salvation & Glory</h2>
+        <p class="artist">Praise Payimo ft juliusmike</p>
+
+        <img src="video 1.jpg" alt="Salavation & Glory">
+
+        <a href="https://youtu.be/xC-xcEnRTP8"
+           target="_blank"
+           class="watch-btn">
+            Watch Video
+        </a>
+    </div>
+
+
+    <!-- CARD 2 -->
+    <div class="music-card">
+        <h2>BURNING AND SHINNING LIGHT </h2>
+        <p class="artist">Praise Payimo </p>
+
+        <img src="burning.jpeg" alt="BURNING AND SHINNING LIGHT ">
+
+        <a href="https://youtu.be/mDItGeM8pcs"
+           target="_blank"
+           class="watch-btn">
+            Watch Video
+        </a>
+    </div>
+
+
+    <!-- CARD 3 -->
+    <div class="music-card">
+        <h2>OH JESUS</h2>
+        <p class="artist">Praise Payimo</p>
+
+        <img src="Oh Jesus Artwork.JPG.jpeg" alt="OH JESUS">
+
+        <a href="https://youtu.be/TSbH6901eOQ"
+           target="_blank"
+           class="watch-btn">
+            Watch Video
+        </a>
+    </div>
+
+
+    <!-- CARD 4 -->
+    <div class="music-card">
+        <h2>Dwell (Revival Come)</h2>
+        <p class="artist">Praise Payimo</p>
+
+        <img src="video 2.JPEG" alt="video 3">
+
+        <a href="https://youtu.be/27Y-hfQAbuA"
+           target="_blank"
+           class="watch-btn">
+            Watch Video
+        </a>
+    </div>
+
+</section>
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+    <h2>
+        Connect with Praise Payimo
+    </h2>
+
+    <div class="social-buttons">
+
+        <a href="https://www.instagram.com/praisepayimo/" class="social-button" target="_blank" rel="noopener noreferrer">
+            Instagram
+        </a>
+
+
+        <a href="https://www.tiktok.com/@praisepayimo" class="social-button" target="_blank" rel="noopener noreferrer">
+            TikTok
+        </a>
+
+        <a href="https://www.youtube.com/@PraisePayimo" class="social-button" target="_blank" rel="noopener noreferrer">
+            YouTube
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-top">
+
+        <div>
+            <h3>Connect</h3>
+
+            <a href="https://www.instagram.com/praisepayimo/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.tiktok.com/@praisepayimo" target="_blank" rel="noopener noreferrer">TikTok</a>
+            <a href="https://www.facebook.com/praisepayimo" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </div>
+
+
+        <div>
+            <h3>Stream</h3>
+
+            <a href="https://music.apple.com/us/artist/praise-payimo/1888074029" target="_blank" rel="noopener noreferrer">Apple Music</a>
+            <a href="https://open.spotify.com/artist/6Q5l8d5J7v0X8v5X8v5X8v5" target="_blank" rel="noopener noreferrer">Spotify</a>
+            <a href="https://www.youtube.com/@PraisePayimo" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+
+
+        <div>
+            <h3>Bookings</h3>
+
+            <a href="mailto:epraise73@gmail.com">
+                epraise73@gmail.com
+            </a>
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Praise Payimo. All rights reserved.
+        </p>
+
+        <p>
+            Nigeria
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
